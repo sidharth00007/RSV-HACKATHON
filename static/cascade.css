@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1586202692035-48cc339ecea8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fHBhZ2VzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 1;
+}
+#container{
+    /* border: 1px solid rebeccapurple; */
+    border-radius: 30px;
+
+    background-color: black;
+    padding: 60px;
+    color: white;
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; */
+    height: 370px;
+    width: 570px;
+}
+#container h1{
+    /* margin-left: 150px; */
+    color: white;
+}
+input{
+    margin: 10px 30px;
+    border:none ;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    width: 450px;
+}
+#btn{
+    background-color: rebeccapurple;
+    color: white;
+
+    font-size: 1.7rem;
+    padding: 1px 60px;
+    margin: 10px 40px;
+}
+#btn:hover{
+    font-size: 1.8rem;
+}
+#btn1{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: white;
+    font-size: 2rem;
+    color: rebeccapurple;
+    
+}
+#btn1:hover{
+    text-decoration: underline;
+}

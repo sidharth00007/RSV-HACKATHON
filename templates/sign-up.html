@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style3.css') }}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}" />
+    <title>Sign Up Page</title>
+</head>
+
+<body>
+    <!--sign up---------------->
+    <div class="sign-up-form">
+
+        <!--heading-->
+        <strong>Sign Up</strong>
+        <!--inputs------------->
+        <form action="/signup" method="POST">
+            <!-- <input type="email" placeholder="Full Name" name="fullname" required> -->
+            <input type="email" placeholder="Example@gmail.com" name="username" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <!--submit-btn-->
+            <input type="Submit" value="Sign In">
+        </form>
+        <!--forget and sign up btn-->
+        <div class="form-btns">
+            <a href="/login" class="already-acount">Already Have Account?</a>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

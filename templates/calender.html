@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style33.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <title>Calendar</title>
+</head>
+
+<body>
+  <section class="main">
+    <nav>
+      <a href="#" class="logo">
+        <img src="{{ url_for('static', filename='logoo.png') }}" />
+      </a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn">
+        <span class="nav-icon"></span>
+      </label>
+      <ul class="menu">
+        <li><a href="/index">Home</a></li>
+                <li><a href="/assignment">Assignments</a></li>
+                <li><a  class="active"  href="/calender">Calender</a></li>
+                <li><a href="/test">Test Reports</a></li>
+                <li><a href="/logout">Logout</a></li>
+      </ul>
+    </nav>
+  </section>
+  
+  <div class="calendar-main">
+    <h2>Calendar</h2>
+  </div>
+
+
+  <!--Calendar-------------->
+
+
+  <div class="container">
+    <div class="calendar">
+      <div class="month">
+        <i class="fas fa-angle-left prev"></i>
+        <div class="date">
+          <h1></h1>
+          <p></p>
+        </div>
+        <i class="fas fa-angle-right next"></i>
+      </div>
+      <div class="weekdays">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+      </div>
+      <div class="days"></div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

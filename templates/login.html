@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style2.css') }}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}" />
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="form">
+        <!--login---------------->
+        <div class="login-form">
+            
+            <!--heading-->
+            <strong>Log In</strong>
+            <!--inputs------------->
+            <form action="/login" method="POST">
+                <input type="email" placeholder="Example@gmail.com" name="username" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <!--submit-btn-->
+                <input type="submit" value="Log In">
+            </form>
+            <!--forget and sign up btn-->
+            <div class="form-btns">
+                <a href="#" class="forget">Forget Your Password?</a>
+                <a href="/signup" class="sign-up-btn">Create Account</a>
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+</body>
+</html>

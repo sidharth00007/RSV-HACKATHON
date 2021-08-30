@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style99.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}" />
+
+</head>
+
+<body>
+    <a href="/index">
+        <button id="btn1">Home</button></a>
+
+    <div class="add-assign-form">
+
+        <!--heading-->
+        <strong>Add Test</strong>
+        <!--inputs------------->
+        <form action="/addt" method="POST">
+            <input type="text" placeholder="Link for the Test" name="t_link" required>
+            <input type="text" placeholder="Subject of the Tett" name="t_subject" required>
+            <input type="date" placeholder="Due date of the Test" name="t_date" required>
+            <!--submit-btn-->
+            <input type="Submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

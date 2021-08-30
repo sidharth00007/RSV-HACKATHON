@@ -1,0 +1,225 @@
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: calibri;
+}
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    outline: none;
+    border: none;
+}
+input{
+    outline: none;
+    border: none;
+}
+.main{
+
+    width:100%;
+    height:768px;
+    position: relative;
+}
+.logo img{
+    height: 80px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 30px;
+    background-color:#fff;
+    box-shadow: 2px 2px 20px rgba(255, 151, 103, 0.164);
+    z-index: 1;
+    width:100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+nav ul{
+    display: flex;
+    margin:0px;
+    padding: 0px;
+}
+nav ul li a{
+    height:40px;
+    line-height: 43px;
+    margin: 8px;
+    padding: 0px 10px;
+    display: flex;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color:#111;
+    letter-spacing: 1px;
+    transition: 0.4s ease-in-out;
+}
+.active{
+    background-color: #f54417;
+    color: #fff;
+}
+nav ul li a:hover{
+    border-radius: 5px;
+    background-color: #ff0000;
+    color:#fff;
+    box-shadow: 5px 10px 30px rgba(219, 74, 6, 0.5);
+    transition: all ease 0.2s;
+}
+nav .menu-btn{
+    display: none;
+}
+@media(max-width:1100px){
+    nav{
+        justify-content: space-between;
+        height: 65px;
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        background-color: #fff;
+        border-bottom: 4px solid #ff0000;
+        width:100%;
+    }
+    .menu li{
+        width:100%;
+    }
+    nav .menu li a{
+        width:100%;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        margin:0px;
+        padding: 25px;
+        border:1px solid rgba(38,38,38,0.03);
+    }
+    nav .menu-icon{
+        cursor: pointer;
+        float: right;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+    nav .menu-icon .nav-icon{
+        background-color: #333333;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background 0.2s ease-out;
+        width:18px;
+    }
+    nav .menu-icon .nav-icon:before,
+    nav .menu-icon .nav-icon:after{
+        background: #333333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all ease-out 0.2s;
+        width:100%;
+    }
+    nav .menu-icon .nav-icon:before{
+        top: 5px;
+    }
+    nav .menu-icon .nav-icon:after{
+        top:-5px;
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon{
+        background: transparent;
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon:before{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    nav .menu-btn{
+        display: none;
+    }
+    nav .menu-btn:checked ~ .menu{
+        display: block;
+    }
+   .main{
+       background-size: 500px;
+   }.scroll{
+       left: 48%;
+       bottom: 200px;
+   }
+}
+.assignments{
+    display: flex;
+    justify-content: center;
+    margin: -710px 30px;
+}
+.assignments h2{
+    font-size: 2rem;
+    color: #1b1919;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 40px;
+    padding: 5px 30px;
+    border: 1px solid #e0e0e0;
+}
+.table-box
+{
+    margin: 750px auto;
+}
+
+.table-row{
+    display: table;
+    width: 80%;
+    margin: 10px auto;
+    font-family: sans-serif;
+    background: transparent;
+    padding: 12px 0;
+    color: #555;
+    font-size: 13px;
+    box-shadow: 0 1px 4px 0px rgba(0,0,50,0.3);
+}
+.table-head{
+    background: #8665f7;
+    box-shadow: none;
+    color: #fff;
+    font-weight: 600;
+}
+.table-head .table-cell,
+.table-head .table-cell-2
+{
+    border-right: none;
+}
+.table-cell, 
+.table-cell-2{
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    padding: 4px 0;
+    border-right: 1px solid #d6d4d4;
+    vertical-align: middle;
+}
+.first-cell{
+    text-align: left;
+    padding-left: 10px;
+}
+.last-cell{
+    border-right: none;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+@media only screen and (max-width: 600px) {
+  .table-row {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>SCHOOL HOMEPAGE</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style22.css') }}" />
+    <!--fav-icon-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}" />
+</head>
+
+<body>
+    <section class="main">
+        <nav>
+            <a href="#" class="logo">
+                <img src="{{ url_for('static', filename='logoo.png') }}" />
+            </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <ul class="menu">
+                <li><a class="active" href="/index">Home</a></li>
+                <li><a href="/assignment">Assignments</a></li>
+                <li><a href="/calender">Calender</a></li>
+                <li><a href="/test">Test Reports</a></li>
+                <li><a href="/logout">Logout</a></li>
+                <!-- <li><a href="#">Contact</a></li>
+                <li><a href="#">Team</a></li> -->
+            </ul>
+        </nav><hr>
+    <h1 id="your-subject" style="text-align: center; margin-top: 100px;">Your Subjects</h1><hr>
+        <!--box-container----------------->
+        <div class="box-container">
+            <!--box-1-------->
+            <div class="box">
+                <img src="{{ url_for('static', filename='icon5.png') }}">
+                <font>Biology</font>
+                <p>Lorem ipsum dolor sit amet, consectetur ad asese do eiusmod tempor incididunt utarla oreetdolo magna
+                    aliqua</p>
+                <!--btn--------->
+                <a href="/bioass">Assignments</a>
+                <a href="/biotest">Test Reports</a>
+            </div>
+            <!--box-2-------->
+            <div class="box">
+                <img src="{{ url_for('static', filename='icon7.png') }}">
+                <font>Political Science</font>
+                <p>Lorem ipsum dolor sit amet, consectetur ad asese do eiusmod tempor incididunt utarla oreetdolo magna
+                    aliqua.</p>
+                <!--btn--------->
+                <a href="/polass">Assignments</a>
+                <a href="/poltest">Test Reports</a>
+            </div>
+            <!--box-3-------->
+            <div class="box">
+                <img src="{{ url_for('static', filename='icon8.png') }}">
+                <font>Computer Science</font>
+                <p>Lorem ipsum dolor sit amet, consectetur ad asese do eiusmod tempor incididunt utarla oreetdolo magna
+                    aliqua</p>
+                <!--btn--------->
+                <a href="/compass">Assignments</a>
+                <a href="/comptest">Test Reports</a>
+            </div>
+            <!--box-4-------->
+            <div class="box">
+                <img src="{{ url_for('static', filename='icon9.png') }}">
+                <font>Physics</font>
+                <p>Lorem ipsum dolor sit amet, consectetur ad asese do eiusmod tempor incididunt utarla oreetdolo magna
+                    aliqua.</p>
+                <!--btn--------->
+                <a href="/phyass">Assignments</a>
+                <a href="/phytest">Test Reports</a>
+            </div>
+            <!--box-1-------->
+
+        </div>
+
+        <script>
+        const text="YOUR SUBJECTS";
+        let index=1;
+        function writee(){
+            document.getElementById("your-subject").innerText=text.slice(0,index);
+            index++;
+            if (index>text.length){
+                index=1;
+            }
+        }
+        setInterval(() => {
+            writee();
+        }, 300);
+        </script>
+</body>
+
+</html>
